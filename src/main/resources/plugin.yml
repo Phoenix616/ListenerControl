@@ -1,0 +1,12 @@
+name: ListenerControl
+version: '${minecraft.plugin.version}'
+main: de.themoep.listenercontrol.ListenerControl
+api-version: 1.13
+load: STARTUP
+authors: [Phoenix616]
+description: Plugin to manage event listeners of other plugins
+commands:
+  listenercontrol:
+    description: Main plugin command
+    usage: /<command> reload
+    permission: listenercontrol.command

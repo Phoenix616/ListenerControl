@@ -1,0 +1,4 @@
+deactivated-events:
+  WorldGuard:
+    normal:
+    - inventory.InventoryMoveItemEvent
