@@ -74,7 +74,7 @@ public final class ListenerControl extends JavaPlugin implements Listener {
         if (section != null) {
             for (String plugin : section.getKeys(false)) {
                 for (EventPriority priority : EventPriority.values()) {
-                    for (String eventName : section.getStringList(priority.name().toLowerCase() + "." + plugin)) {
+                    for (String eventName : section.getStringList(plugin + "." + priority.name().toLowerCase())) {
                         Class<?> eClass = null;
                         try {
                             eClass = Class.forName("org.bukkit.event." + eventName);
